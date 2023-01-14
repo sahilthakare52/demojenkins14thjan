@@ -12,10 +12,5 @@ pipeline {
                 echo 'new one'
             }
         }
-        stage('failure') {
-            steps {
-                systemctl start docker
-            }
-        }
     }
 }
